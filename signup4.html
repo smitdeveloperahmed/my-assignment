@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup - Step 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+        video {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: -1;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/3202634/3202634-hd_1920_1080_30fps.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
+    <div class="box">
+        <h2>Create Password</h2>
+        <p>Almost done!</p>
+        
+        <input type="password" placeholder="Enter Password">
+        <input type="password" placeholder="Confirm Password">
+        
+        <button onclick="location.href='index.html'">
+            Finish Signup
+        </button>
+    </div>
+
+</body>
+</html>
